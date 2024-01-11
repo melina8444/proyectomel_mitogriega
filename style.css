@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100&family=The+Nautigal:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100&family=The+Nautigal:wght@400;700&family=Zilla+Slab:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400;1,6..96,500;1,6..96,600&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/slippy-2');
+@import url('https://fonts.cdnfonts.com/css/bushido');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* HERO */
+.hero {
+    background-image:  url(./assets/img/dioses_griegos_hero.jpg);
+    color: rgba(248, 239, 239, 0.507);
+    padding: 20px;
+    text-align: center;
+    background-size: cover;
+    width: 100%;
+    height:100dvh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.hero-title{
+    font-family: 'Slippy', sans-serif;
+    font-size: 80px;
+    position: absolute;
+    margin: 10% ;
+
+}
+/* 
+.glass{
+    From https://css.glass 
+/* width: 40%;
+height: 100dvh;
+background-color: #ebb99a69;
+backdrop-filter: blur(2.2px);
+color: #ebb99a71;
+position: absolute;
+right: 20px;
+border-radius: 50px; 
+} */
+
+/* MENU */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #81808000;
+    padding: 10px;
+    position: relative;
+    
+    
+}
+nav a {
+    color: rgb(59, 56, 56);
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 22px;
+    transition: box-shadow 0.3s ease-in-out; /* Agrego una transición para suavizar el efecto */
+    }
+   
+
+nav a:hover {
+    box-shadow: 0 0 50px rgba(247, 230, 3, 0.5);
+    transition: box-shadow 0.3s ease-in-out; /* Agrego la misma transición aquí para suavizar la reversión */
+}
+
+/* WAVE */
+.wave{
+    position: absolute;
+    width: 100%;
+    height: 27%;
+    bottom: 0;
+    left: 0;
+    filter: blur(50px); 
+}
+
+/* MAIN */
+main {
+    background: linear-gradient(to top, #b87333, #ebb99a);
+    filter: blur(0.5px); 
+}
+/* SECCIONES */
+.gallery{
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    /* height: 100dvh; */
+    margin: 0 auto;
+    padding: 50px 0;
+    
+    
+}
+
+.gallerycontainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    
+}
+
+.gallerytitle{
+
+    font-size: 2rem;
+    margin-bottom: 1em;
+    font-family: 'Bushido', sans-serif;
+    font-family: 'Bushido Shadow', sans-serif;
+    font-family: 'Bushido Shadow Italic', sans-serif;
+    font-family: 'Bushido Leftalic', sans-serif;
+    font-family: 'Bushido Italic', sans-serif;
+    font-family: 'Bushido Bold', sans-serif;
+    font-family: 'Bushido Bold Leftalic', sans-serif;
+    font-family: 'Bushido Bold Italic', sans-serif;
+
+   
+}
+
+.gallerycontent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+
+
+.gallerypicture{
+    min-width: 200px;
+    flex: 350px;
+    box-shadow: 10px 10px 10px #484646 ;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff63; /* Fondo blanco */
+    border-radius: 15px; /* Esquinas redondeadas */
+    overflow: hidden; /* Oculta contenido que sobresale */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin: 20px; /* Espaciado entre las tarjetas */
+    transition: transform 0.3s ease-in-out; /* Agrega una transición de transformación */
+    
+}
+
+/* Estilos para el contenido dentro de las tarjetas */
+.card img {
+    width: 100%; /* Imágenes ocupan el 100% del ancho de la tarjeta */
+    height: 20%; /* Altura automática para mantener la proporción */
+    border-bottom: 1px solid #ccc; /* Borde inferior para separar la imagen del texto */
+}
+.card p {
+    padding: 15px; /* Relleno interno para el texto */
+}
+
+/* Efecto de escala al pasar el ratón sobre las tarjetas */
+.card:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el ratón */
+}
+
+.galleryimg{
+    width: 100%;
+    height: 400px;
+    object-fit:co;
+}
+
+span{
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+    /* font-family: 'Montserrat', sans-serif;
+    font-family: 'The Nautigal', cursive;
+    font-family: 'Zilla Slab', serif; */
+    font-family: 'Bodoni Moda', serif;
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
